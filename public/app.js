@@ -1,9 +1,9 @@
 
-Stamplay.init('sdkrateobject');
+Stamplay.init('yourAppId');
 
 function rateFive(){
-	var objectInstance = new Stamplay.Cobject('store').Model;
-	objectInstance.fetch('56549d53b3039e5f75c0d0dd').then(function(){
+	var objectInstance = new Stamplay.Cobject('objectModel').Model;
+	objectInstance.fetch('id').then(function(){
     	return objectInstance.rate(5).then(function(){
     		alert('rated 5!');
     	});
@@ -11,8 +11,8 @@ function rateFive(){
 }
 
 function rateFour(){
-	var objectInstance = new Stamplay.Cobject('store').Model;
-	objectInstance.fetch('56549d53b3039e5f75c0d0dd').then(function(){
+	var objectInstance = new Stamplay.Cobject('objectModel').Model;
+	objectInstance.fetch('id').then(function(){
     	return objectInstance.rate(4).then(function(){
     		alert('rated 4!');
     	});
@@ -20,8 +20,8 @@ function rateFour(){
 }
 
 function rateThree(){
-	var objectInstance = new Stamplay.Cobject('store').Model;
-	objectInstance.fetch('56549d53b3039e5f75c0d0dd').then(function(){
+	var objectInstance = new Stamplay.Cobject('objectModel').Model;
+	objectInstance.fetch('id').then(function(){
     	return objectInstance.rate(3).then(function(){
     		alert('rated 3!');
     	});
@@ -29,8 +29,8 @@ function rateThree(){
 }
 
 function rateTwo(){
-	var objectInstance = new Stamplay.Cobject('store').Model;
-	objectInstance.fetch('56549d53b3039e5f75c0d0dd').then(function(){
+	var objectInstance = new Stamplay.Cobject('objectModel').Model;
+	objectInstance.fetch('id').then(function(){
     	return objectInstance.rate(2).then(function(){
     		alert('rated 2!');
     	});
@@ -38,8 +38,8 @@ function rateTwo(){
 }
 
 function rateOne(){
-	var objectInstance = new Stamplay.Cobject('store').Model;
-	objectInstance.fetch('56549d53b3039e5f75c0d0dd').then(function(){
+	var objectInstance = new Stamplay.Cobject('objectModel').Model;
+	objectInstance.fetch('id').then(function(){
     	return objectInstance.rate(1).then(function(){
     		alert('rated 1!');
     	});
