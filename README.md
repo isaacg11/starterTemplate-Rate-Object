@@ -1,9 +1,9 @@
 # starterTemplate-Rate-Object
-a starter template for rating a custom object using the Stamplay SDK
+a Javascript starter template for rating a custom object using the Stamplay SDK
 
 **NOTE: Users must be logged in to use the rating function!**
 
-**CLONING: When cloning this repo, you must switch out the appId & object Id's with your own to make it work.**
+**CLONING: When cloning this repo, you must initialize your app first to make it work.**
 
  1) **Initialize the front-end of your app with Stamplay**
  <br>
@@ -26,13 +26,13 @@ Stamplay.init('yourAppId');
 ```
 3) **Establish object to be rated**
 - Go to your Stamplay editor and go to the **Data** section. Then go to **Objects**
-- Establish what object in the collection your going to rate by getting it's object **Id**.
+- Establish which object in the collection your going to rate by getting it's object **Id**.
 
 4) **rate( )**
 ```
 function rateFive(){
-	var objectInstance = new Stamplay.Cobject('store').Model;
-	objectInstance.fetch('56549d53b3039e5f75c0d0dd').then(function(){
+	var objectInstance = new Stamplay.Cobject('objectModel').Model;
+	objectInstance.fetch('id').then(function(){
     	return objectInstance.rate(5).then(function(){
     		alert('rated 5!');
     	});
